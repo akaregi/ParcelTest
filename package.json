@@ -10,8 +10,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "bulma": "^0.8.0",
-    "parcel-bundler": "^1.12.4",
-    "src": "^1.1.2"
+    "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
     "pug": "^2.0.4",

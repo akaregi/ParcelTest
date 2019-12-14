@@ -1,0 +1,9 @@
+@import "~bulma/bulma";
+
+body {
+    font-family: monospace;
+}
+
+.navbar-item img {
+    max-height: unset;
+}

@@ -1,0 +1,22 @@
+extends ./layouts/layout
+
+mixin section(title, anchor, isCategory)
+    if isCategory === true
+        section.section: .container: .columns.is-mobile.is-centered: .column.is-three-fifths-desktop
+            h2.title.has-text-centered.is-2(id=anchor)= title
+            block
+    else
+        h3.title.has-text-centered.is-5(id=anchor)= title
+        block
+        br
+
+block article
+    +section("Who am I?", "who", true)
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus tincidunt urna ac dapibus. Phasellus eu euismod enim, vel ultricies mi. Ut eu dolor tempus, venenatis libero id, volutpat velit. Proin facilisis tincidunt augue eget eleifend. Integer enim elit, varius at turpis quis, eleifend feugiat libero.
+
+    +section("Discography", "disco", true)
+        +section("Biological thing 1", "bio1")
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus tincidunt urna ac dapibus. Phasellus eu euismod enim, vel ultricies mi. Ut eu dolor tempus, venenatis libero id, volutpat velit. Proin facilisis tincidunt augue eget eleifend. Integer enim elit, varius at turpis quis, eleifend feugiat libero.
+
+        +section("Biological thing 2", "bio2")
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus tincidunt urna ac dapibus. Phasellus eu euismod enim, vel ultricies mi. Ut eu dolor tempus, venenatis libero id, volutpat velit. Proin facilisis tincidunt augue eget eleifend. Integer enim elit, varius at turpis quis, eleifend feugiat libero.

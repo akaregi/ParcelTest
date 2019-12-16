@@ -1,8 +1,8 @@
 {
-  "name": "vech",
+  "name": "mappo",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "scripts": {
     "dev": "parcel src/index.pug",
     "build": "parcel build src/index.pug"

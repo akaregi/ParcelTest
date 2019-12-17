@@ -1,6 +1,6 @@
 mixin section(title, anchor, isCategory)
     if isCategory === true
-        section.section.content: .container: .columns.is-mobile.is-centered: .column.is-three-fifths-desktop
+        section.section: .container: .columns.is-mobile.is-centered: .column.is-three-fifths-desktop
             h2.title.has-text-centered.is-2(id=anchor)= title
             block
     else

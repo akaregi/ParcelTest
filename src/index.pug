@@ -14,3 +14,15 @@ block article
 
         +section("Celestial thing 2", "bio2")
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus tincidunt urna ac dapibus. Phasellus eu euismod enim, vel ultricies mi. Ut eu dolor tempus, venenatis libero id, volutpat velit. Proin facilisis tincidunt augue eget eleifend. Integer enim elit, varius at turpis quis, eleifend feugiat libero.
+
+    +section("Links", "links", true)
+        .tile.is-ancestor: .tile.is-12.is-vertical.is-parent
+            .tile.is-child.box.notification.is-link
+                p #[a.title(href="#") Mastodon] #[span.tag.is-link.is-light  @mappo_ms]
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .tile.is-child.box.notification.is-info
+                p #[a.title(href="#") Twitter] #[span.tag.is-info.is-light @mappo_tw]
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .tile.is-child.box.notification.is-dark
+                p #[a.title(href="#") GitHub] #[span.tag.is-light @mappo_gh]
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit.

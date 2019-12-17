@@ -9,3 +9,15 @@ body {
 .navbar-item img {
     max-height: unset;
 }
+
+.icon {
+    padding: 0 1rem;
+}
+
+.tag:not(body) {
+    font-size: 1rem;
+}
+
+a, span, i {
+    vertical-align: middle;
+}
